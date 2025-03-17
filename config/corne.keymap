@@ -6,7 +6,8 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys_es.h>
+// #include <dt-bindings/zmk/keys_es.h>
+#include "keys_es.h"
 
 / {
     keymap {
