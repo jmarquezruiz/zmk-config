@@ -17,8 +17,8 @@
         default_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  Ñ  |  ´   |
+            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  -  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
@@ -47,13 +47,13 @@
         raise_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-            // | CTRL |  +  |  *  |  '  |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+            // | CTRL |  +  |  *  |  "  |     |     |   |  '  |  ¡  |  [  |  ]  |  ç  |  <   |
+            // | SHFT |     |     |     |     |     |   |  ?  |  ¿  |  {  |  }  | "|" |  >   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
 &kp TAB    &kp EXCL  &kp ES_AT_SIGN  &kp ES_HASH  &kp ES_DOLLAR  &kp ES_PERCENT    &kp ES_SLASH  &kp ES_AMPERSAND   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LSHFT  &kp ES_PLUS  &kp ES_ASTERISK  &kp ES_SINGLE_QUOTE    &trans    &trans       &kp MINUS  &kp EQUAL  &kp ES_LEFT_BRACKET   &kp ES_RIGHT_BRACKET  &kp BSLH  &kp GRAVE
+&kp LSHFT  &kp ES_PLUS  &kp ES_ASTERISK  &kp ES_DOUBLE_QUOTES    &trans    &trans       &kp MINUS  &kp EQUAL  &kp ES_LEFT_BRACKET   &kp ES_RIGHT_BRACKET  &kp BSLH  &kp GRAVE
 &kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp ES_LEFT_BRACE   &kp ES_RIGHT_BRACE  &kp ES_PIPE  &kp TILDE
                              &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
             >;
