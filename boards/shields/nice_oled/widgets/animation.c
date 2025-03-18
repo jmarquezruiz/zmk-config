@@ -58,7 +58,6 @@ const lv_img_dsc_t *pokemon_imgs[] = {
     &pokemon15, &pokemon16, &pokemon17, &pokemon18, &pokemon19, &pokemon20,
 };
 
-LV_IMG_DECLARE(nueva_imagen);
 
 // CONFIG_NICE_OLED_VIM
 LV_IMG_DECLARE(vim);
@@ -76,23 +75,13 @@ void draw_animation(lv_obj_t *canvas, struct zmk_widget_screen *widget) {
 
 #if IS_ENABLED(CONFIG_NICE_OLED_GEM_ANIMATION)
     /* If we have the Gem animation enabled */ 
-  lv_obj_t *img = lv_img_create(canvas, NULL);
+    art = lv_animimg_create(widget->obj);
+    lv_obj_center(art);
 
-    /* Establece la imagen que quieres mostrar */
-    lv_img_set_src(img, &nueva_imagen);  // Usa la nueva imagen declarada previamente
-
-    /* Redimensiona la imagen */
-    lv_obj_set_size(img, 100, 100);  // Redimensiona la imagen a 100x100 píxeles
-
-    /* Centra la imagen en el canvas */
-    lv_obj_center(img);
-    // art = lv_animimg_create(widget->obj);
-    // lv_obj_center(art);
-    //
-    // lv_animimg_set_src(art, (const void **)crystal_imgs, 16);
-    // lv_animimg_set_duration(art, CONFIG_NICE_OLED_GEM_ANIMATION_MS);
-    // lv_animimg_set_repeat_count(art, LV_ANIM_REPEAT_INFINITE);
-    // lv_animimg_start(art);
+    lv_animimg_set_src(art, (const void **)crystal_imgs, 16);
+    lv_animimg_set_duration(art, CONFIG_NICE_OLED_GEM_ANIMATION_MS);
+    lv_animimg_set_repeat_count(art, LV_ANIM_REPEAT_INFINITE);
+    lv_animimg_start(art);
 
 #elif IS_ENABLED(CONFIG_NICE_OLED_POKEMON_ANIMATION)
     /* If we have the Pokémon animation enabled */
