@@ -47,13 +47,13 @@
         raise_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+            // | CTRL |  +  |  *  |  '  |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
 &kp TAB    &kp EXCL  &kp ES_AT_SIGN  &kp ES_HASH  &kp ES_DOLLAR  &kp ES_PERCENT    &kp ES_SLASH  &kp ES_AMPERSAND   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp ES_LEFT_BRACKET   &kp ES_RIGHT_BRACKET  &kp BSLH  &kp GRAVE
+&kp LSHFT  &kp ES_PLUS  &kp ES_ASTERISK  &kp ES_SINGLE_QUOTE    &trans    &trans       &kp MINUS  &kp EQUAL  &kp ES_LEFT_BRACKET   &kp ES_RIGHT_BRACKET  &kp BSLH  &kp GRAVE
 &kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp ES_LEFT_BRACE   &kp ES_RIGHT_BRACE  &kp ES_PIPE  &kp TILDE
                              &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
             >;
