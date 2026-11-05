@@ -8,7 +8,9 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      # Pin to a stable ZMK release so CI does not break when upstream `main`
+      # introduces incompatible changes.
+      revision: v0.3.0
       import: app/west.yml
     # nice_oled
     # - name: zmk-nice-oled
